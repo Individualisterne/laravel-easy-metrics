@@ -1,0 +1,61 @@
+{
+    "name": "sakanjo/laravel-easy-metrics",
+    "description": "Generate metrics with ease and precision.",
+    "keywords": [
+        "laravel",
+        "metrics",
+        "charts",
+        "reports"
+    ],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Salah Kanjo",
+            "email": "dev.salah.kanjo@gmail.com"
+        }
+    ],
+    "require": {
+        "php": "^8.0",
+        "illuminate/support": "^10.0|^11.0",
+        "illuminate/database": "^10.0|^11.0",
+        "illuminate/http": "^10.0|^11.0"
+    },
+    "require-dev": {
+        "laravel/pint": "^1.13",
+        "phpstan/phpstan": "^1.10",
+        "pestphp/pest": "^2.24",
+        "orchestra/testbench": "^8.14"
+    },
+    "autoload": {
+        "psr-4": {
+            "SaKanjo\\EasyMetrics\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "SaKanjo\\EasyMetrics\\Tests\\": "tests/src/",
+            "SaKanjo\\EasyMetrics\\Tests\\Database\\Factories\\": "tests/database/factories"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "SaKanjo\\EasyMetrics\\EasyMetricsServiceProvider"
+            ]
+        }
+    },
+    "minimum-stability": "stable",
+    "prefer-stable": true,
+    "config": {
+        "allow-plugins": {
+            "pestphp/pest-plugin": true
+        }
+    },
+    "scripts": {
+        "test": [
+            "@php vendor/bin/pint --test",
+            "@php vendor/bin/phpstan",
+            "@php vendor/bin/pest --parallel"
+        ]
+    }
+}
