@@ -1,7 +1,7 @@
 ![Easy metrics banner](./art/banner.png)
 
 <p align="center">
-    <a href="https://github.com/sakanjo/laravel-easy-metrics/actions"><img alt="Workflow status" src="https://img.shields.io/github/actions/workflow/status/sakanjo/laravel-easy-metrics/tests.yml?style=for-the-badge"></a>
+    <a href="https://github.com/individualisterne/laravel-easy-metrics/actions"><img alt="Workflow status" src="https://img.shields.io/github/actions/workflow/status/individualisterne/laravel-easy-metrics/tests.yml?style=for-the-badge"></a>
     <a href="https://laravel.com"><img alt="Laravel v10.x" src="https://img.shields.io/badge/Laravel-v10.x-FF2D20?style=for-the-badge&logo=laravel"></a>
     <a href="https://php.net"><img alt="PHP 8.0" src="https://img.shields.io/badge/PHP-8.0-777BB4?style=for-the-badge&logo=php"></a>
 </p>
@@ -53,7 +53,7 @@ Table of contents
 ## 📦 Install
 
 ```
-composer require sakanjo/laravel-easy-metrics
+composer require individualisterne/laravel-easy-metrics
 ```
 
 ## 🦄 Usage
@@ -174,56 +174,56 @@ The currently supported aggregate functions to calculate a given column compared
 ##### Min
 
 ```php
-$trend->minByYears('age'); 
-$trend->minByMonths('age'); 
-$trend->minByWeeks('age');  
-$trend->minByDays('age');  
-$trend->minByHours('age');  
-$trend->minByMinutes('age');  
+$trend->minByYears('age');
+$trend->minByMonths('age');
+$trend->minByWeeks('age');
+$trend->minByDays('age');
+$trend->minByHours('age');
+$trend->minByMinutes('age');
 ```
 
 ##### Max
 
 ```php
-$trend->maxByYears('age'); 
-$trend->maxByMonths('age'); 
-$trend->maxByWeeks('age');  
-$trend->maxByDays('age');  
-$trend->maxByHours('age');  
-$trend->maxByMinutes('age');  
+$trend->maxByYears('age');
+$trend->maxByMonths('age');
+$trend->maxByWeeks('age');
+$trend->maxByDays('age');
+$trend->maxByHours('age');
+$trend->maxByMinutes('age');
 ```
 
 ##### Sum
 
 ```php
-$trend->sumByYears('age'); 
-$trend->sumByMonths('age'); 
-$trend->sumByWeeks('age');  
-$trend->sumByDays('age');  
-$trend->sumByHours('age');  
-$trend->sumByMinutes('age');  
+$trend->sumByYears('age');
+$trend->sumByMonths('age');
+$trend->sumByWeeks('age');
+$trend->sumByDays('age');
+$trend->sumByHours('age');
+$trend->sumByMinutes('age');
 ```
 
 ##### Average
 
 ```php
-$trend->averageByYears('age'); 
-$trend->averageByMonths('age'); 
-$trend->averageByWeeks('age');  
-$trend->averageByDays('age');  
-$trend->averageByHours('age');  
-$trend->averageByMinutes('age');  
+$trend->averageByYears('age');
+$trend->averageByMonths('age');
+$trend->averageByWeeks('age');
+$trend->averageByDays('age');
+$trend->averageByHours('age');
+$trend->averageByMinutes('age');
 ```
 
 ##### Count
 
 ```php
-$trend->countByYears(); 
-$trend->countByMonths(); 
-$trend->countByWeeks();  
-$trend->countByDays();  
-$trend->countByHours();  
-$trend->countByMinutes();  
+$trend->countByYears();
+$trend->countByMonths();
+$trend->countByWeeks();
+$trend->countByDays();
+$trend->countByHours();
+$trend->countByMinutes();
 ```
 
 ### Other metrics
@@ -392,4 +392,4 @@ Click the ["💖 Sponsor"](https://github.com/sponsors/sakanjo) at the top of th
 
 ## 📄 License
 
-[MIT License](https://github.com/sakanjo/laravel-easy-metrics/blob/master/LICENSE) © 2023-PRESENT [Salah Kanjo](https://github.com/sakanjo)
+[MIT License](https://github.com/individualisterne/laravel-easy-metrics/blob/master/LICENSE) © 2023-PRESENT [Salah Kanjo](https://github.com/sakanjo)
