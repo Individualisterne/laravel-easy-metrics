@@ -1,5 +1,6 @@
 <?php
 
+use Illuminate\Support\Carbon;
 use Illuminate\Support\Facades\Date;
 use SaKanjo\EasyMetrics\Enums\Range;
 use SaKanjo\EasyMetrics\Metrics\Value;
@@ -9,6 +10,8 @@ use SaKanjo\EasyMetrics\Tests\TestCase;
 use function PHPUnit\Framework\assertEquals;
 
 uses(TestCase::class);
+
+beforeEach(fn () => Carbon::setTestNow(Date::now()->endOfMonth()));
 
 it('shows correct data count by RANGE::TODAY', function () {
     $sequence = [
